@@ -16,9 +16,12 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: ./src/package-lock.json
 
       - run: npm ci
+        working-directory: ./src
       - run: npm test
+        working-directory: ./src
 
   build-and-push-image:
     runs-on: ubuntu-latest
@@ -36,7 +39,7 @@ jobs:
 
       - uses: docker/build-push-action@v7
         with:
-          context: .
+          context: ./src
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/modul1-netics:latest
           cache-from: type=gha
@@ -52,7 +55,7 @@ jobs:
       - uses: dawidd6/action-ansible-playbook@v2
         with:
           playbook: playbook.yml
-          directory: ./ansible
+          directory: ./src/ansible
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: |
             20.44.230.54 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINfhPmnwXNvIRHsRVSOpKAIb1wfWChLeZlHYRxHUsZAu
