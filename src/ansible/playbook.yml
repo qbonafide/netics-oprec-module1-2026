@@ -17,16 +17,16 @@
 
     - name: Add nginx configuration
       copy:
-        src: conf/reverese_proxy.conf
-        dest: /etc/nginx/sites-available/reverese_proxy.conf
+        src: conf/reverse_proxy.conf
+        dest: /etc/nginx/sites-available/reverse_proxy.conf
         owner: root
         group: root
         mode: '0644'
 
     - name: Enable website configuration
       file:
-        src: /etc/nginx/sites-available/reverese_proxy.conf
-        dest: /etc/nginx/sites-enabled/reverese_proxy.conf
+        src: /etc/nginx/sites-available/reverse_proxy.conf
+        dest: /etc/nginx/sites-enabled/reverse_proxy.conf
         state: link
 
     - name: Test nginx configuration
