@@ -64,7 +64,7 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm ci --omit=dev
 
 COPY . .
 
@@ -73,7 +73,7 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-Dockerfile ini menggunakan base image `node:20-alpine` yang berbasis alpine linux yang memiliki ukuran lightweight dibanding image lainnya. Working directory diatur ke dalam `/app`, kemudian file `package.json` dan `package-lock.json` dicopy ke dalam docker dan kemudian dijalankan `npm install` untuk menginstall depedencies (menghasilkan node_modules). File sisanya dicopy ke dalam container dan membuka port 3000 agar API bisa berjalan di port tersebut. `CMD ["npm", "start"]` adalah command default yang bakal dijalankan saat app dimulai. Referensi code Dockerfile berasal dari [sini](https://www.hostinger.com/tutorials/how-to-use-node-js-with-docker?utm_source=google&utm_medium=cpc&utm_id=23198985495&utm_campaign={campaignname}&utm_term=&utm_content={searchterm}&gad_source=1&gad_campaignid=23198985495&gclid=Cj0KCQjwmunNBhDbARIsAOndKplBwici23jfc42kJcNtJxdhztsadCUTkU6Hw77Mr-iGjLMKlknro14aAjJZEALw_wcB).
+Dockerfile ini menggunakan base image `node:20-alpine` yang berbasis alpine linux yang memiliki ukuran lightweight dibanding image lainnya. Working directory diatur ke dalam `/app`, kemudian file `package.json` dan `package-lock.json` dicopy ke dalam docker dan kemudian dijalankan `npm ci --omit=dev` untuk menginstall depedencies yang diperlukan untuk menjalankan app. `--omit=dev` digunakan agar hanya dependencies yang dibutuhkan untuk menjalankan aplikasi yang diinstall, tanpa menyertakan `devDependencies`, sehingga image menjadi lebih kecil dan lebih optimal untuk production. File sisanya dicopy ke dalam container dan membuka port 3000 agar API bisa berjalan di port tersebut. `CMD ["npm", "start"]` adalah command default yang bakal dijalankan saat app dimulai. Referensi code Dockerfile berasal dari [sini](https://www.hostinger.com/tutorials/how-to-use-node-js-with-docker?utm_source=google&utm_medium=cpc&utm_id=23198985495&utm_campaign={campaignname}&utm_term=&utm_content={searchterm}&gad_source=1&gad_campaignid=23198985495&gclid=Cj0KCQjwmunNBhDbARIsAOndKplBwici23jfc42kJcNtJxdhztsadCUTkU6Hw77Mr-iGjLMKlknro14aAjJZEALw_wcB).
 
 <br>
 
