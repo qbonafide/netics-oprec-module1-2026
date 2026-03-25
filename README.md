@@ -296,7 +296,7 @@ Menggunakan CI/CD pipeline dengan github actions membuat proses testing, build, 
 ![](/media/6.png)
 ![](/media/7.png)
 
-## Referensi
+## Referensi / Credits
 1. [https://stackoverflow.com/questions/28705009/how-do-i-get-the-server-uptime-in-node-js](https://stackoverflow.com/questions/28705009/how-do-i-get-the-server-uptime-in-node-js)
 2. [https://www.hostinger.com/tutorials/how-to-use-node-js-with-docker?utm_source=google&utm_medium=cpc&utm_id=23198985495&utm_campaign={campaignname}&utm_term=&utm_content={searchterm}&gad_source=1&gad_campaignid=23198985495&gclid=Cj0KCQjwmunNBhDbARIsAOndKplBwici23jfc42kJcNtJxdhztsadCUTkU6Hw77Mr-iGjLMKlknro14aAjJZEALw_wcB](https://www.hostinger.com/tutorials/how-to-use-node-js-with-docker?utm_source=google&utm_medium=cpc&utm_id=23198985495&utm_campaign={campaignname}&utm_term=&utm_content={searchterm}&gad_source=1&gad_campaignid=23198985495&gclid=Cj0KCQjwmunNBhDbARIsAOndKplBwici23jfc42kJcNtJxdhztsadCUTkU6Hw77Mr-iGjLMKlknro14aAjJZEALw_wcB)
 3. [https://github.com/arsitektur-jaringan-komputer/Modul-Jarkom/tree/master/Modul-3/Reverse%20Proxy#224-konfigurasi-reverse-proxy](https://github.com/arsitektur-jaringan-komputer/Modul-Jarkom/tree/master/Modul-3/Reverse%20Proxy#224-konfigurasi-reverse-proxy)
@@ -306,3 +306,20 @@ Menggunakan CI/CD pipeline dengan github actions membuat proses testing, build, 
 7. [https://github.com/dawidd6/action-ansible-playbook](https://github.com/dawidd6/action-ansible-playbook)
 8. [https://github.com/appleboy/ssh-action](https://github.com/appleboy/ssh-action)
 9. [https://github.com/github/awesome-copilot/blob/main/instructions/github-actions-ci-cd-best-practices.instructions.md](https://github.com/github/awesome-copilot/blob/main/instructions/github-actions-ci-cd-best-practices.instructions.md)
+
+<br>
+
+## ChatGPT Reference
+Screenshot penggunaan ChatGPT dalam mengerjakan tugas:
+
+![](/media/c1.png)
+
+![](/media/c2.png)
+
+![](/media/c3.png)
+
+![](/media/c4.png)
+
+![](/media/c5.png)
+
+![](/media/c6.png)
