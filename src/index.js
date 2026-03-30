@@ -17,7 +17,7 @@ app.get('/health', (req, res) => {
     res.json({
         "nama": "Christina Tan",
         "nrp": "5025241060",
-        "status": "UP",
+        // "status": "UP",
         "timestamp": new Date().toISOString(),
         "uptime": format(process.uptime())
     })
