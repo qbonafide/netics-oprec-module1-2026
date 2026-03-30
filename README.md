@@ -306,6 +306,8 @@ Menggunakan CI/CD pipeline dengan github actions membuat proses testing, build, 
 7. [https://github.com/dawidd6/action-ansible-playbook](https://github.com/dawidd6/action-ansible-playbook)
 8. [https://github.com/appleboy/ssh-action](https://github.com/appleboy/ssh-action)
 9. [https://github.com/github/awesome-copilot/blob/main/instructions/github-actions-ci-cd-best-practices.instructions.md](https://github.com/github/awesome-copilot/blob/main/instructions/github-actions-ci-cd-best-practices.instructions.md)
+10. [https://github.com/eligeraldine/modul-1-oprec-netics-2025](https://github.com/eligeraldine/modul-1-oprec-netics-2025)
+11. [https://github.com/spuuntries/netics-assignment-1](https://github.com/spuuntries/netics-assignment-1)
 
 <br>
 
