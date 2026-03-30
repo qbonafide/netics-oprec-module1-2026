@@ -77,7 +77,7 @@ jobs:
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/modul1-netics:latest
             sudo docker stop modul1-netics || true
             sudo docker rm modul1-netics || true
-            sudo docker run -d --name modul1-netics -p 3000:3000 ${{ secrets.DOCKER_USERNAME }}/modul1-netics:latest
+            sudo docker run -d --name modul1-netics -p 127.0.0.1:3000:3000 ${{ secrets.DOCKER_USERNAME }}/modul1-netics:latest
             sleep 5
             curl --fail http://localhost:3000/health
             curl --fail http://20.44.230.54/health
